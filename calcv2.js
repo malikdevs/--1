@@ -38,7 +38,7 @@ function calculate(x, y, operation) {
 }
 
 //? variables
-let operation = ''; // define operation variable as empty string
+let operation = ''; // declare operation variable as empty string
 while (operation !== 'quit') {
     // currently no error checking on x, y variable declarations
     let x = parseInt(prompt('Enter First Number'));
