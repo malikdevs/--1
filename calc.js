@@ -106,11 +106,11 @@ function calculate() { // define function to call
     while (true) { // while loop
         function functions() { // define functions + functionality
             let x = parseInt(prompt('Enter First Number'));
-            if (!Number.isNaN(x)) { // if x is NaN
+            if (!Number.isNaN(x)) { // if x is not NaN, do this
                 let y = parseInt(prompt('Enter Second Number'));
-                if (!Number.isNaN(y)) { // if y is NaN
+                if (!Number.isNaN(y)) { // if y is not NaN, do this
                     let operation = prompt('Select Operation: add, subtract, multiply, divide');
-                    if (operation !== 'quit') { // if Not quit
+                    if (operation !== 'quit') { // if operation is not quit, do this
                         if (operation === 'add') {
                             function add() {
                                 let sum = x + y;
