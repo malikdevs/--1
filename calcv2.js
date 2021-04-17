@@ -23,7 +23,7 @@ function divide(x, y) {
 }
 
 //? calculations
-function calculate(x, y, operation) { // define
+function calculate(x, y, operation) {
     if (operation === 'add') {
         add(x, y);
     } else if (operation === 'subtract') {
@@ -32,25 +32,19 @@ function calculate(x, y, operation) { // define
         multiply(x, y);
     } else if (operation === 'divide') {
         divide(x, y);
-    } else { // selected operation
+    } else {
         throw new Error('Invalid Input');
     }
 }
 
 //? variables
-let operation = ''; // clear operation
-while (operation !== 'quit') { // while loop
+let operation = ''; // define operation variable as empty string
+while (operation !== 'quit') {
     let x = parseInt(prompt('Enter First Number'));
-    // if (Number.isNaN(x)) { // if x is NaN
-    //     throw new Error('NaN');
-    // }
     let y = parseInt(prompt('Enter Second Number'));
-    // if (Number.isNaN(y)) { // if y is NaN
-    //     throw new Error('NaN');
-    // }
     operation = prompt('Select Operation: add, subtract, multiply, divide');
     if (operation !== 'quit') {
-        calculate(x, y, operation); // run application
+        calculate(x, y, operation); // run application using defined parameters
     }
 }
 console.log('OK, QUIT');
