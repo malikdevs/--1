@@ -32,7 +32,7 @@ function calculate(x, y, operation) {
         multiply(x, y);
     } else if (operation === 'divide') {
         divide(x, y);
-    } else {
+    } else { // error check operation
         throw new Error('Invalid Input');
     }
 }
@@ -40,6 +40,7 @@ function calculate(x, y, operation) {
 //? variables
 let operation = ''; // define operation variable as empty string
 while (operation !== 'quit') {
+    // currently no error checking on x, y variable declarations
     let x = parseInt(prompt('Enter First Number'));
     let y = parseInt(prompt('Enter Second Number'));
     operation = prompt('Select Operation: add, subtract, multiply, divide');
