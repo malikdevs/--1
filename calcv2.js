@@ -48,6 +48,6 @@ while (operation !== 'quit') {
         calculate(x, y, operation); // run application using defined parameters
     }
 }
-console.log('OK, QUIT')
+console.log('OK, QUIT');
 
 
